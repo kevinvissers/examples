@@ -15,7 +15,7 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Create file
-        uses: kevinvissers/composite-action-example@v2
+        uses: kevinvissers/composite-action-example@v3
         with: 
           file-name: 'helloworld.txt'
           file-content: 'Hello world!'
