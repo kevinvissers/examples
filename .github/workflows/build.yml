@@ -14,10 +14,10 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Setup node environment
+      - name: Create file
         uses: kevinvissers/composite-action-example@v1
         with: 
-          registry-auth: '123'
-
-      - name: Display npm version
-        run: npm -v
+          file-name: 'helloworld.txt'
+          file-content: 'Hello world!'
+      - name: 'Display file content'
+        run: cat helloworld.txt
